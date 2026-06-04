@@ -1,0 +1,278 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #e6e6e6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.underline:hover {
+  opacity: 0.6;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 60px;
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-menu {
+  display: flex;
+  margin-left: 40px;
+  gap: 8px;
+}
+
+.nav-menu a {
+  padding: 8px 18px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+}
+.nav-menu a:hover {
+  background-color: #d8d8d8;
+}
+.nav-menu a.active {
+  font-weight: 700;
+}
+
+.lang-switcher {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
+.lang-switcher a {
+  font-size: 14px;
+}
+.lang-switcher a.current {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Intro ===== */
+.intro {
+  margin: 90px 0;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.intro .role {
+  margin-left: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contacts {
+  margin-top: 16px;
+}
+.contacts p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  width: fit-content;
+}
+.text_img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.intro .image {
+  width: 300px;
+  height: 300px;
+  margin-left: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  font-weight: 700;
+  color: #888;
+}
+
+/* ===== Headings ===== */
+h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+/* ===== Works grid ===== */
+.works-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.works-grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0 -10px;
+}
+.works-grid li {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+.works-grid li a {
+  display: block;
+}
+.works-tile {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #d4d4d4;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 18px;
+  font-weight: 700;
+  transition: opacity 0.15s;
+}
+.works-grid li a:hover .works-tile {
+  opacity: 0.8;
+}
+.works-tile.arrow {
+  font-size: 40px;
+}
+
+/* ===== Skill list ===== */
+.skillList {
+  margin-left: 30px;
+}
+.skillList ul {
+  list-style: none;
+}
+.skillList li {
+  margin-bottom: 0.3em;
+}
+.indent {
+  margin-left: 50px;
+  display: block;
+}
+.indent.related {
+  margin-bottom: 1.4em;
+}
+
+.note {
+  color: #777;
+  font-style: italic;
+}
+
+/* ===== Works list page ===== */
+.work-item {
+  display: flex;
+  align-items: center;
+  margin: 0 60px 30px;
+}
+.work-image {
+  flex-basis: 30%;
+  min-width: 180px;
+  margin-right: 24px;
+}
+.work-image .works-tile {
+  aspect-ratio: 16 / 9;
+}
+.work-info {
+  flex-basis: 65%;
+}
+.work-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* ===== Contact page ===== */
+.contact-body {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.contact-body p {
+  margin-bottom: 16px;
+}
+
+/* ===== Footer ===== */
+footer {
+  color: #666;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 1000px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 20px;
+  }
+  .nav-menu { margin-left: 0; margin-top: 10px; }
+  .lang-switcher { margin-left: 20px; }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    margin: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .intro h1 { font-size: 34px; }
+  .intro .image { margin: 30px 0 0; width: 200px; height: 200px; font-size: 60px; }
+  .contacts { display: flex; flex-direction: column; align-items: center; }
+  .contacts p { justify-content: center; }
+  h2 { font-size: 24px; margin-left: 15px; }
+  .skillList { margin-left: 15px; }
+  .indent { margin-left: 25px; }
+  .works-grid li { width: calc(100% - 20px); }
+  .work-item { flex-direction: column; margin: 0 15px 30px; }
+  .work-image { width: 100%; margin: 0 0 15px; }
+  .contact-body { margin-left: 15px; }
+}
